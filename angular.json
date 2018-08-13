@@ -21,9 +21,14 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/base.css",
+              "src/assets/css/vendor.css",
+              "src/assets/css/main.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/particlesjs/dist/particles.min.js"
+            ]
           },
           "configurations": {
             "production": {
