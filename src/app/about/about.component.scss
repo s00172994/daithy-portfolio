@@ -1,0 +1,11 @@
+.about-desc a, a:visited, a:active {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px black dotted;
+}
+
+.about-desc a:hover {
+  color: black;
+  text-decoration: underline;
+  border: none;
+}
