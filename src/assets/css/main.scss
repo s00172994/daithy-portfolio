@@ -553,7 +553,7 @@ form,
 .spinner {
     width: 40px;
     height: 40px;
-    background-color: white;
+    background-color: $primary-color;
   
     margin: 100px auto;
     -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
@@ -2916,9 +2916,14 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-image: url("../images/contact-bg.png");
     background-repeat: no-repeat;
     background-position: center, center;
+    background-size: cover;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
     padding-top: 15rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
