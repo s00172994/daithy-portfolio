@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ParticlesModule } from 'angular-particle';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -30,8 +29,7 @@ import { PreloaderComponent } from './preloader/preloader.component';
     PreloaderComponent
   ],
   imports: [
-    BrowserModule,
-    ParticlesModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
