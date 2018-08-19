@@ -1888,6 +1888,20 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
+    visibility: hidden;
+}
+
+.home-social > li {
+    visibility: visible;
+    transition: opacity 150ms;
+}
+
+.home-social:hover > li {
+    opacity: 0.25;
+}
+
+.home-social:hover > li:hover {
+    opacity: 1.0;
 }
 
 .home-social a {
@@ -1928,7 +1942,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: $primary-color;
+    color: white;
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;

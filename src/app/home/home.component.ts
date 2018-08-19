@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Particles from 'particlesjs';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home',
@@ -31,6 +32,17 @@ export class HomeComponent implements OnInit {
         }
       }]
     });
+
+    this.socialIconInit();
+  }
+
+  private socialIconInit() {
+    $(".facebook").hover(function () {$(".social-container-wrap").toggleClass("color-facebook")});
+    $(".twitter").hover(function () {$(".social-container-wrap").toggleClass("color-twitter")});
+    $(".github").hover(function () { $(".social-container-wrap").toggleClass("color-github") });
+    $(".linkedin").hover(function () { $(".social-container-wrap").toggleClass("color-linkedin") });
+    $(".gamejolt").hover(function () {$(".social-container-wrap").toggleClass("color-gamejolt")});
+    $(".itchio").hover(function () {$(".social-container-wrap").toggleClass("color-itchio")});
   }
 
 }
