@@ -2255,16 +2255,6 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 
-.about__line {
-    display: block;
-    width: 2px;
-    height: 10.2rem;
-    background-color: #FFFFFF;
-    position: absolute;
-    right: 7.2rem;
-    top: 0;
-}
-
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2306,12 +2296,6 @@ html.no-csstransitions .home-content__main {
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .about__line {
-        right: 5.5rem;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     .s-about {
         padding-top: 12rem;
@@ -2344,9 +2328,6 @@ html.no-csstransitions .home-content__main {
     }
     .stats__col:nth-child(n) {
         border: none;
-    }
-    .about__line {
-        height: 7.2rem;
     }
 }
 
@@ -2506,6 +2487,34 @@ html.no-csstransitions .home-content__main {
     margin-top: -23.4rem;
 }
 
+.works__line {
+    display: block;
+    width: 2px;
+    height: 10.2rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 7.2rem;
+    top: 0;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * about
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 700px) {
+    .works__line {
+        right: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .works__line {
+        height: 7.2rem;
+    }
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
@@ -2621,7 +2630,7 @@ html.no-csstransitions .home-content__main {
 .item-folio__project-link {
     display: block;
     color: #FFFFFF;
-    box-shadow: 0 0 0 1px #FFFFFF;
+    box-shadow: 0 0 0 2px #FFFFFF;
     border-radius: 50%;
     height: 4.2rem;
     width: 4.2rem;

@@ -12,4 +12,8 @@ export class WorksComponent implements OnInit {
   ngOnInit() {
   }
 
+  private goToURL(inputURL: string) {
+    window.open(inputURL, "_blank");
+  }
+
 }
