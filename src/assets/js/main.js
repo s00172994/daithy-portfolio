@@ -204,7 +204,7 @@
     * ------------------------------------------------------ */
     var clSlickSlider = function() {
 
-        $('.clients').slick({
+        $('.skills').slick({
             arrows: false,
             dots: true,
             infinite: true,

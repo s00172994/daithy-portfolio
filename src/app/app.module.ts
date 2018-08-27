@@ -6,9 +6,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { ServicesComponent } from './services/services.component';
+import { ExperienceComponent } from './experience/experience.component';
 import { WorksComponent } from './works/works.component';
-import { ClientsComponent } from './clients/clients.component';
+import { SkillsComponent } from './skills/skills.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PhotoswipeBgComponent } from './photoswipe-bg/photoswipe-bg.component';
 import { PreloaderComponent } from './preloader/preloader.component';
@@ -21,9 +21,9 @@ import { PreloaderComponent } from './preloader/preloader.component';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ServicesComponent,
+    ExperienceComponent,
     WorksComponent,
-    ClientsComponent,
+    SkillsComponent,
     ContactsComponent,
     PhotoswipeBgComponent,
     PreloaderComponent

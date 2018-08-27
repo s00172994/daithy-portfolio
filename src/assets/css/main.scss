@@ -37,11 +37,11 @@
  *      ## home animations
  *  # about
  *      ## about stats
- *  # services
- *      ## services list
+ *  # experience
+ *      ## experience list
  *  # works
  *      ## bricks/masonry
- *  # clients
+ *  # skills
  *      ## slider
  *      ## testimonials
  *  # contact
@@ -1345,7 +1345,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width: 800px) {
-    .s-clients {
+    .s-skills {
         padding-bottom: 17.4rem;
     }
     .section-header.has-bottom-sep::before {
@@ -2354,10 +2354,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # services
+ * # experience
  *
  * ------------------------------------------------------------------- */
-.s-services {
+.s-experiences {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
     background-color: #FFFFFF;
@@ -2367,33 +2367,33 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## services list
+ * ## experience list
  * ------------------------------------------------------------------- */
-.services-list {
+.experience-list {
     margin-top: 6rem;
 }
 
-.services-list .service-item {
+.experience-list .experience-item {
     margin-bottom: .9rem;
 }
 
-.services-list .service-item h3 {
+.experience-list .experience-item h3 {
     margin-top: 0;
 }
 
-.services-list .service-item:nth-child(2n+1) {
+.experience-list .experience-item:nth-child(2n+1) {
     padding-right: 50px;
 }
 
-.services-list .service-item:nth-child(2n+2) {
+.experience-list .experience-item:nth-child(2n+2) {
     padding-left: 50px;
 }
 
-.services-list .service-text {
+.experience-list .experience-text {
     margin-left: 7.8rem;
 }
 
-.services-list .service-icon {
+.experience-list .experience-icon {
     float: left;
     color: $base-color;
     font-size: 4.8rem;
@@ -2548,49 +2548,49 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * services
+ * experience
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .services-list {
+    .experience-list {
         max-width: 1000px;
     }
-    .services-list .service-item:nth-child(2n+1) {
+    .experience-list .experience-item:nth-child(2n+1) {
         padding-right: 30px;
     }
-    .services-list .service-item:nth-child(2n+2) {
+    .experience-list .experience-item:nth-child(2n+2) {
         padding-left: 30px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .services-list h3 {
+    .experience-list h3 {
         font-size: 2.5rem;
     }
-    .services-list .service-item:nth-child(2n+1) {
+    .experience-list .experience-item:nth-child(2n+1) {
         padding-right: 20px;
     }
-    .services-list .service-item:nth-child(2n+2) {
+    .experience-list .experience-item:nth-child(2n+2) {
         padding-left: 20px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .services-list {
+    .experience-list {
         margin-top: 4.2rem;
         max-width: 500px;
         text-align: center;
     }
-    .services-list .service-item:nth-child(n) {
+    .experience-list .experience-item:nth-child(n) {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .services-list h3 {
+    .experience-list h3 {
         font-size: 3rem;
     }
-    .services-list .service-text {
+    .experience-list .experience-text {
         margin-left: 0;
     }
-    .services-list .service-icon {
+    .experience-list .experience-icon {
         font-size: 4.5rem;
         float: none;
         margin-top: 0;
@@ -2598,24 +2598,24 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
-    .s-services {
+    .s-experience {
         padding-top: 12rem;
     }
-    .services-list .service-item:nth-child(n) {
+    .experience-list .experience-item:nth-child(n) {
         padding-right: 10px;
         padding-left: 10px;
     }
-    .services-list h3 {
+    .experience-list h3 {
         font-size: 2.5rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .services-list .service-item:nth-child(n) {
+    .experience-list .experience-item:nth-child(n) {
         padding-right: 0;
         padding-left: 0;
     }
-    .services-list h3 {
+    .experience-list h3 {
         font-size: 2.5rem;
     }
 }
@@ -2921,10 +2921,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # clients
+ * # skills
  *
  * ------------------------------------------------------------------- */
-.s-clients {
+.s-skills {
     padding-top: 16.2rem;
     padding-bottom: 16.8rem;
     background-color: #e6e6e6;
@@ -2936,14 +2936,14 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## slider
  * ------------------------------------------------------------------- */
-.clients-outer {
+.skills-outer {
     margin-top: 3.6rem;
     padding-bottom: 9rem;
     text-align: center;
     position: relative;
 }
 
-.clients__slide {
+.skills__slide {
     display: block;
     opacity: .55;
     padding: 1.5rem 2.8rem;
@@ -2951,7 +2951,7 @@ html.no-csstransitions .home-content__main {
     transition: opacity 0.5s ease-in-out;
 }
 
-.clients__slide:hover, .clients__slide:focus {
+.skills__slide:hover, .skills__slide:focus {
     opacity: 1;
 }
 
@@ -2959,14 +2959,14 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## testimonials
  * ------------------------------------------------------------------- */
-.clients-testimonials {
+.skills-testimonials {
     margin-top: 4.2rem;
     padding-top: 7.2rem;
     text-align: center;
     position: relative;
 }
 
-.clients-testimonials::before {
+.skills-testimonials::before {
     content: "";
     display: block;
     height: 1px;
@@ -2981,11 +2981,11 @@ html.no-csstransitions .home-content__main {
     transform: translateX(-50%);
 }
 
-.clients-testimonials .testimonials {
+.skills-testimonials .testimonials {
     margin: 0 10%;
 }
 
-.clients-testimonials .testimonials p {
+.skills-testimonials .testimonials p {
     font-family: "lora-regular", serif;
     font-size: 3rem;
     line-height: 1.8;
@@ -2993,33 +2993,33 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 6rem;
 }
 
-.clients-testimonials .testimonials__slide {
+.skills-testimonials .testimonials__slide {
     padding: 0 0 3rem 0;
 }
 
-.clients-testimonials .testimonials__avatar {
+.skills-testimonials .testimonials__avatar {
     height: 8.4rem;
     width: 8.4rem;
     border-radius: 50%;
     margin: 0 auto 1.2rem auto;
 }
 
-.clients-testimonials .testimonials__name, 
-.clients-testimonials .testimonials__pos {
+.skills-testimonials .testimonials__name, 
+.skills-testimonials .testimonials__pos {
     display: block;
 }
 
-.clients-testimonials .testimonials__name {
+.skills-testimonials .testimonials__name {
     font-family: "montserrat-semibold", sans-serif;
     color: #000000;
 }
 
-.clients-testimonials .testimonials__pos {
+.skills-testimonials .testimonials__pos {
     font-family: "montserrat-light", sans-serif;
     font-size: 1.4rem;
 }
 
-.clients-testimonials .testimonials .slick-arrow {
+.skills-testimonials .testimonials .slick-arrow {
     position: absolute;
     top: 7.2rem;
     width: 66px;
@@ -3040,82 +3040,82 @@ html.no-csstransitions .home-content__main {
     z-index: 2;
 }
 
-.clients-testimonials .testimonials .slick-prev {
+.skills-testimonials .testimonials .slick-prev {
     left: -130px;
     background-image: url("../images/left-arrow.png");
 }
 
-.clients-testimonials .testimonials .slick-next {
+.skills-testimonials .testimonials .slick-next {
     right: -130px;
     background-image: url("../images/right-arrow.png");
 }
 
-.clients-testimonials .testimonials .slick-dots {
+.skills-testimonials .testimonials .slick-dots {
     margin-top: -0.6px;
 }
 
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * clients
+ * skills
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .clients-testimonials .testimonials {
+    .skills-testimonials .testimonials {
         margin: 0 12%;
     }
-    .clients-testimonials .testimonials p {
+    .skills-testimonials .testimonials p {
         font-size: 2.6rem;
     }
-    .clients-testimonials .testimonials .slick-prev {
+    .skills-testimonials .testimonials .slick-prev {
         left: -100px;
     }
-    .clients-testimonials .testimonials .slick-next {
+    .skills-testimonials .testimonials .slick-next {
         right: -100px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .clients-testimonials .testimonials p {
+    .skills-testimonials .testimonials p {
         font-size: 2.2rem;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .clients-testimonials::before {
+    .skills-testimonials::before {
         width: 400px;
     }
-    .clients-testimonials .testimonials {
+    .skills-testimonials .testimonials {
         margin: 0 2rem;
     }
-    .clients-testimonials .testimonials .slick-arrow {
+    .skills-testimonials .testimonials .slick-arrow {
         top: auto;
         bottom: 3rem;
     }
-    .clients-testimonials .testimonials .slick-prev {
+    .skills-testimonials .testimonials .slick-prev {
         left: 0;
     }
-    .clients-testimonials .testimonials .slick-next {
+    .skills-testimonials .testimonials .slick-next {
         right: 0;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .s-clients {
+    .s-skills {
         padding-top: 12rem;
     }
-    .clients-testimonials::before {
+    .skills-testimonials::before {
         width: 250px;
     }
-    .clients-testimonials .testimonials {
+    .skills-testimonials .testimonials {
         margin: 0;
     }
-    .clients-testimonials .testimonials p {
+    .skills-testimonials .testimonials p {
         font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .clients-testimonials .testimonials p {
+    .skills-testimonials .testimonials p {
         font-size: 1.9rem;
     }
 }
