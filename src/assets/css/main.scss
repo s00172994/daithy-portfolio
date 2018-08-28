@@ -2945,6 +2945,7 @@ html.no-csstransitions .home-content__main {
 
 .skills__slide {
     display: block;
+    word-wrap: normal;
     opacity: .55;
     padding: 1.5rem 2.8rem;
     -webkit-transition: opacity 0.5s ease-in-out;
@@ -2955,6 +2956,21 @@ html.no-csstransitions .home-content__main {
     opacity: 1;
 }
 
+.skills__slide-title {
+    color: #000000;
+    margin-top: 1rem;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * slider
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 400px) {
+    .skills__slide-title {
+        display: none;
+    }
+}
 
 /* ------------------------------------------------------------------- 
  * ## testimonials
