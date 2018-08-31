@@ -43,4 +43,26 @@
   </div>
   <!-- end about-desc -->
 
+  <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+      <div class="col-block stats__col ">
+          <div class="stats__count">3</div>
+          <h5>Awards Received <i class="fa fa-trophy"></i></h5>
+      </div>
+      <div class="col-block stats__col">
+          <div class="stats__count" *ngIf="contributions;else default_number">{{contributions.toString()}}</div>
+          <ng-template #default_number><div class="stats__count">0</div></ng-template>
+          <h5>Total Commits <i class="fa fa-github-alt"></i></h5>
+      </div>
+      <div class="col-block stats__col">
+          <div class="stats__count">3</div>
+          <h5>Projects Completed <i class="fa fa-check"></i></h5>
+      </div>
+      <div class="col-block stats__col">
+          <div class="stats__count">0</div>
+          <h5>Connections <i class="fa fa-users"></i></h5>
+      </div>
+
+  </div> <!-- end about-stats -->
+
 </section>
