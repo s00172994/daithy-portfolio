@@ -41,8 +41,8 @@ import { PreloaderComponent } from './preloader/preloader.component';
   providers: [{
     provide: RECAPTCHA_SETTINGS,
     useValue: {
-      siteKey: '6Ld7im0UAAAAAAcR8b4cK6fK21nb1QRAg_c6WfBM',
-      theme: 'dark',
+      siteKey: '6LcyjG8UAAAAABzSrQ_Z_gZy-ofKRx-LopYobMeO',
+      theme: 'dark'
     } as RecaptchaSettings,
   }],
   bootstrap: [AppComponent]
