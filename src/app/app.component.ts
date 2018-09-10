@@ -9,9 +9,9 @@ export class AppComponent implements OnInit {
   title = 'app';
 
   ngOnInit() {
-    this.loadScript('../assets/js/plugins.js');
-    this.loadScript('../assets/js/main.js');
-    this.loadScript('../assets/js/vertical-timeline.min.js');
+    this.loadScript('./assets/js/plugins.js');
+    this.loadScript('./assets/js/main.js');
+    this.loadScript('./assets/js/vertical-timeline.min.js');
   }
 
   private loadScript(url: string) {

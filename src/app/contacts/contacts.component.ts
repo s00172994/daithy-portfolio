@@ -12,6 +12,8 @@ export class ContactsComponent implements OnInit {
       recaptchaReactive: new FormControl(null, Validators.required)
   });
 
+  public downloadForm: FormGroup = new FormGroup({ });
+
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,20 @@
+{
+    "name": "David Brennan's Portfolio",
+    "short_name": "David Brennan's Portfolio",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#899c87",
+    "background_color": "#899c87",
+    "start_url": "http://daithy.com",
+    "display": "standalone"
+}
