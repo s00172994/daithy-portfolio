@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from '../services/api.service';
 import { GitHubResponse } from '../services/github-response';
+import { TwitterResponse } from '../services/twitter-response';
 
 @Component({
   selector: 'app-about',
@@ -12,6 +13,7 @@ export class AboutComponent implements OnInit {
 
   @Input() githubData: GitHubResponse;
   @Input() contributions: number;
+  @Input() twitterData: TwitterResponse;
   errorMessage: string;
 
   constructor(private _apiService: ApiService) {
@@ -19,6 +21,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.getGitHubData('s00172994');
+    this.getFollowerData('Daithyi');
   }
 
   getGitHubData(username: string): boolean {
@@ -38,6 +41,16 @@ export class AboutComponent implements OnInit {
       this.contributions += element.count;
     }
     console.log(this.contributions.toString() + "... done!");
+  }
+
+  getFollowerData(username: string) : boolean {
+    this._apiService.getFollowers(username).subscribe(followerData => {
+      this.twitterData = followerData[0];
+      console.log('twitterData: ' + this.twitterData + " Twitter data successfully obtained!");
+      console.log('Follower count: ' + this.twitterData.followers_count);
+    },
+      error => this.errorMessage = <any>error);
+    return false;
   }
 
 }

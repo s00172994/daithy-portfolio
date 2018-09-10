@@ -31,13 +31,13 @@
     </div>
     <div class="col-full">
       <p>
-        Here you can view some of the projects I've had the opportunity of contributing to, as well as some personal fun coding stuff
+        Here I present to you some of the projects I have had the opportunity of contributing to, as well as some personal fun coding stuff
         that I've been working on. Every once in a while I like to <b><a href="http://darkydude.deviantart.com/">draw</a></b> in my free time or for commission work.
       </p>
     </div>
     <div class="col-full">
       <p>
-        If you have any questions, please feel free to <b><a class="smoothscroll" href="#contact">contact</a></b> me!
+        If you have any questions, please feel free to <b><a class="smoothscroll" href="#contact">get in touch</a></b> with me!
       </p>
     </div>
   </div>
@@ -47,20 +47,21 @@
                 
       <div class="col-block stats__col ">
           <div class="stats__count">3</div>
-          <h5>Awards Received <i class="fa fa-trophy"></i></h5>
+          <h5><i class="fa fa-trophy"></i> Awards Received</h5>
       </div>
       <div class="col-block stats__col">
           <div class="stats__count" *ngIf="contributions;else default_number">{{contributions.toString()}}</div>
           <ng-template #default_number><div class="stats__count">0</div></ng-template>
-          <h5>Total Commits <i class="fa fa-github-alt"></i></h5>
+          <h5><i class="fa fa-github-alt"></i> Total Commits</h5>
       </div>
       <div class="col-block stats__col">
           <div class="stats__count">3</div>
-          <h5>Projects Completed <i class="fa fa-check"></i></h5>
+          <h5><i class="fa fa-check"></i> Projects Completed</h5>
       </div>
       <div class="col-block stats__col">
-          <div class="stats__count">0</div>
-          <h5>Connections <i class="fa fa-users"></i></h5>
+          <div class="stats__count" *ngIf="twitterData;else default_number">{{twitterData.followers_count}}</div>
+          <ng-template #default_number><div class="stats__count">0</div></ng-template>
+          <h5><i class="fa fa-twitter"></i> Followers</h5>
       </div>
 
   </div> <!-- end about-stats -->
