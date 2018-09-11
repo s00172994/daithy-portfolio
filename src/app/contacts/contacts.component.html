@@ -85,9 +85,7 @@
 
                 <div class="cinfo">
                     <h5>Resumé / CV</h5>
-                    <form [formGroup]="downloadForm" action="../assets/cv/David-Brennan-CV-2018.pdf">
-                        <button class="full-width btn--primary btn-download">Download</button>
-                    </form>
+                    <button (click)="goToURL('./assets/cv/David-Brennan-CV-2018.pdf')" class="full-width btn--primary btn-download">Download</button>
                 </div>
 
                 <ul class="contact-social">

@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { RecaptchaModule, RECAPTCHA_SETTINGS, RecaptchaSettings } from 'ng-recaptcha';
+import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -36,7 +37,8 @@ import { PreloaderComponent } from './preloader/preloader.component';
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RecaptchaModule.forRoot()
+    RecaptchaModule.forRoot(),
+    RecaptchaFormsModule
   ],
   providers: [{
     provide: RECAPTCHA_SETTINGS,

@@ -24,4 +24,12 @@ export class AppComponent implements OnInit {
     body.appendChild(script);
   }
 
+  get goToURLContext() {
+    return this.goToURL.bind(this);
+  }
+
+  public goToURL(inputURL: string) {
+    window.open(inputURL, "_blank");
+  }
+
 }

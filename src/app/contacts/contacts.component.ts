@@ -8,15 +8,21 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class ContactsComponent implements OnInit {
   
-  public reactiveForm: FormGroup = new FormGroup({
-      recaptchaReactive: new FormControl(null, Validators.required)
-  });
-
-  public downloadForm: FormGroup = new FormGroup({ });
+  public reactiveForm: FormGroup;
+  public downloadForm: FormGroup;
 
   constructor() { }
 
   ngOnInit() {
+    this.reactiveForm = new FormGroup({
+      recaptchaReactive: new FormControl(null, Validators.required)
+    });
+
+    this.downloadForm = new FormGroup({ });
   }
 
+  public goToURL(inputURL: string) {
+    //window.open(inputURL, "_blank");
+    window.location.href = inputURL;
+  }
 }
