@@ -9,7 +9,6 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class ContactsComponent implements OnInit {
   
   public reactiveForm: FormGroup;
-  public downloadForm: FormGroup;
 
   constructor() { }
 
@@ -17,8 +16,6 @@ export class ContactsComponent implements OnInit {
     this.reactiveForm = new FormGroup({
       recaptchaReactive: new FormControl(null, Validators.required)
     });
-
-    this.downloadForm = new FormGroup({ });
   }
 
   public goToURL(inputURL: string) {
